@@ -1,0 +1,690 @@
+/* GENERAL: */
+
+body{
+  padding: 0;
+  padding-bottom: 20px;
+  margin: 0;
+  /* Background Image Source:
+  https://i.pinimg.com/originals/7b/b6/37/7bb637fddce04d2b2891488adf4f3b1b.png
+  */
+  background-image: url(../images/marble.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  font-family: "Gill sans";
+}
+
+.clear {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.section {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 1px 20px;
+  margin: 10px 50px;
+}
+
+/* HEADER: */
+
+header {
+  display: flex;
+  background: rgba(255, 255, 255, 0.6);
+}
+
+#logo {
+  font-size: 30px;
+  padding: 0;
+  margin: auto 0;
+  color: black;
+  font-family: "Gill sans";
+  width: 600px;
+  text-align: center;
+}
+
+#hours {
+  width: 260px;
+  font-size: 16px;
+  padding: 60px 10px;
+  margin-left: auto;
+}
+
+/* NAVIGATION BAR: */
+
+.menu ul {
+  list-style-type: none;
+  font-family: "Gill sans";
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.menu li {
+  float: left;
+  list-style: none;
+  width: 18%;
+  min-width: 100px;
+  margin: auto;
+
+}
+
+.menu li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.active {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+/* HOME PAGE: */
+
+#slide-and-we-are {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+#slideshow {
+  text-align: center;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+#img-box {
+  height: 100%;
+  width: 100%;
+  background: black;
+  position: relative;
+}
+
+#img-box img {
+  width: 100%;
+}
+
+#button_container{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.slide_button {
+  margin: auto 30px;
+  border-color: black;
+  padding: 10px;
+  font-size: 14pt;
+  font-family: "Gill sans";
+}
+
+.slide_button:hover, #application button:hover, #myform button:hover {
+  background: grey;
+  color: white;
+}
+
+#we-are-block {
+  margin: auto;
+  width: 45%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+}
+
+.we-are-section {
+  width: 100%;
+  height: 150px;
+  float: right;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.we-are {
+  width: 30%;
+  height: 130px;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+
+.we-are-descr {
+  width: 50%;
+  height: 140px;
+  border-left-style: solid;
+  border-left-color: black;
+  border-left-width: 2px;
+  padding-left: 30px;
+  font-size: 18px;
+}
+
+#philosophy {
+  margin-top: 0;
+}
+
+#quote-strip {
+  text-align: center;
+  display: flex;
+}
+
+.quote {
+  margin: auto;
+  font-style: italic;
+  font-size: 20px;
+  color: gray;
+  width: 300px;
+  text-align: center;
+}
+
+/*END OF HOME PAGE*/
+
+
+/* MENU PAGE: */
+
+#menutittle{
+  text-align: center;
+  font-size: 37px;
+  font-weight: lighter;
+}
+
+#paper {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#foodmenu{
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 22px;
+  font-weight: lighter;
+}
+.category{
+  text-align: left;
+  font-family: "Gill sans";
+  font-weight: lighter;
+}
+
+#up, #down {
+  margin: auto;
+  padding: 1px;
+  width: 100%;
+}
+
+li{
+  list-style: square;
+}
+
+.menu-section{
+  padding: 5%;
+  margin: 10% auto;
+  text-align: left;
+  border-style: outset;
+  border-width:thin;
+  border-color: black;
+  width: 350px;
+  height: 450px;
+}
+
+/* END OF MENU PAGE */
+
+
+/* RECIPES PAGE: */
+
+h1 {
+  margin: 5px;
+  font-variant: small-caps;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+.recipe-name {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.recipe-food h3 {
+  font-weight: normal;
+  font-style: italic;
+}
+
+.ingredients ul {
+  columns: 2;
+}
+
+.directions p {
+  padding: 0 10px;
+}
+
+#soup-warning {
+  font-style: italic;
+  margin: 0;
+  padding: 5px;
+  font-size: 18px;
+}
+
+.recipe-banner {
+  margin: 30px auto;
+  text-align: center;
+  font-size: 0;
+  background: white;
+}
+
+.recipe-banner img {
+  width: 33%;
+  height: 160px;
+  display: inline-block;
+  margin: auto 0;
+}
+
+.recipe-img {
+  width: 220px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.img-left {
+  float: left;
+  margin-right: 15px;
+}
+
+.img-right {
+  float: right;
+  margin-left: 15px;
+}
+
+/* Making the details initially hidden so the recipes appear
+  in a list; clicking on the header will show the recipe (JavaScript) */
+
+.directions, .ingredients, .recipe-img {
+  display: none;
+}
+
+.recipe-active {
+  background: grey;
+  color: white;
+}
+
+/* END OF RECIPES PAGE */
+
+/* WORKING PAGE: */
+
+#working-page{
+  display: flex;
+}
+
+#statuepic{
+  height: 400px;
+  margin-top: 60px;
+  margin-right: auto;
+}
+
+#application {
+  width: 60%;
+}
+
+#application input, #application textarea {
+  width: 70%;
+}
+
+#application label {
+  width: 100px;
+}
+
+#application button {
+  margin-left: 105px;
+}
+
+/* CONTACT US AND WORKING PAGES: */
+
+form {
+  padding: 0;
+  width: auto;
+  margin: 0;
+}
+
+.form-input {
+  margin: 10px auto;
+}
+
+input {
+  padding: 3px 6px;
+}
+
+label {
+  display: inline-block;
+  width: 150px;
+  text-align: right;
+  font-family: serif;
+}
+
+#f-message-label, #a-message-label, #avail-comments-label {
+  vertical-align: top;
+}
+
+.form-input input, textarea {
+  width: 50%;
+  border: 1.5px solid black;
+  height: 1.5em;
+  font-family: sans-serif;
+  font-size: 10pt;
+}
+
+input:focus, textarea:focus {
+  border-color: #cc0000;
+}
+
+#availability input{
+  width: 30px;
+  text-align: right;
+}
+
+#checkboxes {
+  margin-left: 150px;
+}
+
+textarea {
+  height: 10em;
+  padding: 6px;
+}
+
+.form-button {
+  text-align: center;
+  margin-left: 150px;
+}
+
+.errorContainer {
+  font-size: 14px;
+  text-align: center;
+  background-color: #fdd8d7;
+  color: black;
+  border: 1px #cc0000 solid;
+  border-radius: 6px;
+  padding: 2px 8px;
+  display: inline-block;
+}
+
+.hiddenError {
+  display: none;
+}
+
+#rankform{
+  margin-left: -95px;
+}
+.radioform label{
+  width: 500px;
+}
+
+.radioform input{
+  margin-left: 150px;
+  font-family: serif;
+}
+
+#radio-buttons {
+  display: flex;
+  padding-left: 150px;
+  padding-top: 10px;
+}
+
+#radio-buttons input {
+  margin: 5px 10px;
+}
+
+/* Making the form responsive: */
+
+  input::after, textarea::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .errorDiv {
+    display: block;
+    margin: 5px;
+    margin-left: 155px;
+  }
+
+/* END OF CONTACT US AND WORKING PAGES */
+
+#application button, #myform button {
+  margin: auto 10px;
+  border-color: black;
+  padding: 5px 10px;
+  font-size: 10pt;
+  font-family: "Gill sans";
+}
+
+/* - - - - - - */
+/* RESPONSIVE: */
+/* - - - - - - */
+
+@media (max-width: 600px) {
+  .section {
+    margin: 5px;
+    padding: 5px;
+  }
+}
+
+
+/* HOME PAGE: */
+
+@media (min-width: 900px) {
+  #img-box img { /* Code help from https://www.w3schools.com/css/css_align.asp */
+    width: 100%;
+    max-height: 95%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 900px) {
+
+  #slide-and-we-are, #slideshow, #quote-strip {
+    display: block;
+  }
+
+  #slideshow {
+    height: 100%;
+    width: 100%;
+  }
+
+  #img-box {
+    height: 500px;
+    display: flex;
+  }
+
+  #img-box img {
+    max-height: 100%;
+    margin: auto;
+  }
+
+  #we-are-block {
+    width: 100%;
+  }
+
+  #slideshow::after, #we-are-block::after,
+  .we-are-section::after, .we-are-description::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@media (max-width: 500px) {
+  .quote::after, .we-are::after, .we-are-descr::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .we-are-section {
+    flex-direction: column;
+    height: auto;
+    float: none;
+    width: 100%;
+  }
+  .we-are-descr {
+    height: auto;
+    width: auto;
+    border: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .we-are {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: auto;
+  }
+
+  .slide_button {
+    padding: 5px;
+    margin: auto 10px;
+    font-size: 12pt;
+  }
+
+  .quote {
+    width: 100%;
+  }
+
+  #slide-and-we-are {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  #img-box {
+    height: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  #img-box {
+    height: 250px;
+  }
+}
+
+/* HEADER: */
+
+@media (max-width: 500px) {
+  header {
+    display: block;
+  }
+  #logo {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
+  #hours {
+    display: block;
+    margin: auto;
+  }
+}
+
+/* MENU PAGE: */
+
+@media (max-width: 600px) {
+  #foodmenu {
+    display: block;
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  .category {
+    font-size: 24pt;
+  }
+
+  .menu-section {
+    height: auto;
+  }
+
+  .recipe-banner {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .menu-section {
+    width: 80%;
+  }
+}
+
+/* RECIPES PAGE: */
+
+@media (max-width: 900px) {
+  .recipe-img {
+    float: none;
+    display: flex;
+    margin: auto;
+  }
+}
+
+@media (max-width: 600px) {
+ .ingredients ul {
+   columns: 1;
+ }
+}
+
+/* WORKING PAGE: */
+
+@media (max-width: 900px) {
+  #statuepic {
+    display: none;
+  }
+
+  #application {
+    width: 100%;
+  }
+
+  #application input, #application textarea {
+    width: 50%;
+  }
+}
+
+
+/* CONTACT PAGE: */
+
+@media (max-width: 600px) {
+  #rankform {
+    width: 100%;
+    margin: 0;
+  }
+  #radio-buttons {
+    padding: 0;
+  }
+  .radioform .errorDiv, #myform button, #application button,
+  .errorDiv {
+    margin-left: 0;
+  }
+
+  .form-input input, textarea, #application input, #application textarea,
+  label, #application label {
+    width: 90%;
+    text-align: left;
+  }
+}
